@@ -16,6 +16,7 @@ async def ping_handler(c: Client, m: "types.Message"):
                        "Speed depends on your media DC.\n\n"
                        "Just send me media and reply to it with /rename command.",
                        reply_markup=types.InlineKeyboardMarkup([[
+                           types.InlineKeyboardButton("📢 Update Channel",url="https://t.me/A_BOTZz"),
                            types.InlineKeyboardButton("Show Settings",
                                                       callback_data="showSettings")
                        ]]))
@@ -32,6 +33,7 @@ async def help_handler(c: Client, m: "types.Message"):
                        "To set custom thumbnail reply to any image with /set_thumbnail\n\n"
                        "To see custom thumbnail press /show_thumbnail",
                        reply_markup=types.InlineKeyboardMarkup([[
+                           types.InlineKeyboardButton("📢 Update Channel",url="https://t.me/A_BOTZz"),
                            types.InlineKeyboardButton("Show Settings",
                                                       callback_data="showSettings")
                        ]]))
